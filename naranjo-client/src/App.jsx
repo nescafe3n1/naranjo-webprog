@@ -11,6 +11,7 @@ function App() {
         Email: leueilshem@gmail.com <br />
         Other Personal Info: Pinoy
       </p>
+      <a href="https://github.com/nescafe3n1">Github</a>
       </header>
     </div>
   );
