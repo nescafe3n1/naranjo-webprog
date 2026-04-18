@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 const HomePage = () => (
   <div className="flex w-full flex-col gap-12 p-8">

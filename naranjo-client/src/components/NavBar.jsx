@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import Button from './Button';
 
 const links = [
   { label: 'Home', to: '/' },
@@ -8,8 +9,8 @@ const links = [
 
 const NavBar = () => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b-2 border-zinc-900 bg-white/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <header className="fixed inset-x-0 top-0 z-50 border-b-2 border-zinc-900 bg-white/80 backdrop-blur-md pt-4 pb-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
         <NavLink to="/" className="flex items-center gap-2 group">
           <div className="h-9 w-12 bg-zinc-900 rounded-xl flex items-center justify-center group-hover:rotate-6 transition-transform">
             <span className="text-white font-black text-xl">LSN</span>
@@ -32,6 +33,15 @@ const NavBar = () => {
             </NavLink>
           ))}
         </nav>
+
+        <div className="flex gap-3">
+          <Button to="/auth/signin" variant="secondary" className="px-5 py-2">
+            Sign In
+          </Button>
+          <Button to="/auth/signup" variant="primary" className="px-5 py-2">
+            Sign Up
+          </Button>
+        </div>
       </div>
     </header>
   );
